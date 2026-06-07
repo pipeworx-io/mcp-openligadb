@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-openligadb",
+  "version": "0.1.0",
+  "description": "OpenLigaDB MCP — community-run, keyless football / soccer match data.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "openligadb"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-openligadb"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
