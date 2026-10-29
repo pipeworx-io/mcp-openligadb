@@ -1,0 +1,72 @@
+[
+  {
+    "name": "list_leagues",
+    "description": "List all available football / soccer leagues and seasons in OpenLigaDB (German football leagues like the Bundesliga, plus others). Returns league id, name, shortcut, season, and sport.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_matches",
+    "description": "Get football / soccer match results / scores and fixtures for a league and season (e.g. Bundesliga). Optionally narrow to a single matchday. Returns teams, kickoff datetime, final score, and whether each match is finished.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "league": {
+          "type": "string",
+          "description": "League shortcut, e.g. 'bl1' (Bundesliga), 'bl2' (2. Bundesliga), 'bl3' (3. Liga), 'dfb' (DFB-Pokal)."
+        },
+        "season": {
+          "type": "string",
+          "description": "Season start year, e.g. \"2024\"."
+        },
+        "matchday": {
+          "type": "number",
+          "description": "Optional matchday number (1-based)."
+        }
+      },
+      "required": [
+        "league",
+        "season"
+      ]
+    }
+  },
+  {
+    "name": "get_table",
+    "description": "Get the league table / standings for a football / soccer league and season (e.g. the Bundesliga table). Returns each team's position, played, won, draw, lost, goals, goal difference, and points.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "league": {
+          "type": "string",
+          "description": "League shortcut, e.g. 'bl1' (Bundesliga), 'bl2' (2. Bundesliga), 'bl3' (3. Liga), 'dfb' (DFB-Pokal)."
+        },
+        "season": {
+          "type": "string",
+          "description": "Season start year, e.g. \"2024\"."
+        }
+      },
+      "required": [
+        "league",
+        "season"
+      ]
+    }
+  },
+  {
+    "name": "current_matchday",
+    "description": "Get the current matchday's football / soccer matches (results / scores) for a league (e.g. this week's Bundesliga fixtures) in the current season.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "league": {
+          "type": "string",
+          "description": "League shortcut, e.g. 'bl1' (Bundesliga), 'bl2' (2. Bundesliga), 'bl3' (3. Liga), 'dfb' (DFB-Pokal)."
+        }
+      },
+      "required": [
+        "league"
+      ]
+    }
+  }
+]
