@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-openligadb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OpenLigaDB MCP — community-run, keyless football / soccer match data. Covers German football leagues (Bundesliga, 2. Bundesliga, 3. Liga, DFB-Pokal) and others: match results / scores, fixtures, and league table / standings.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "openligadb",
     "gatewaySlug": "openligadb",
-    "sourceHash": "v1-370db845bfe0ab206ec398a71978a4e5e182d7abbe1d6cd040f2a44ec11a35f0",
-    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
+    "sourceHash": "v1-d3768c6dad0fd7268ba6d209c187dd3b23ccf55a0a6b207a1b50453ceffcb8a7",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
